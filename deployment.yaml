@@ -28,7 +28,7 @@ spec:
         app: maven-demo
     spec:
       imagePullSecrets:
-      - name: devops-docker-registry
+      - name: local-registry
       containers:
       - name: maven-demo
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
